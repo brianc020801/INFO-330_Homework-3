@@ -16,3 +16,4 @@ INSERT INTO buildings (name, shortname) VALUES
 	('Kane Hall', 'KNE');
 
 INSERT INTO rooms (number, buildingid, seating) VALUES (400, (SELECT id FROM buildings WHERE name="Mary Gates Hall"), 40);
+INSERT INTO rooms (number, buildingid, seating) VALUES (210, (SELECT id FROM buildings WHERE name="Kane Hall"), 100);
